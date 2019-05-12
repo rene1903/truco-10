@@ -1,0 +1,28 @@
+body {
+  background: #AF57B7;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.container {
+  background: rgba(255, 255, 255, 0.4);
+  width: 500px;
+  height: 300px;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  position: relative; }
+  .container::before, .container::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    box-shadow: 100px 0 green inset, 200px 0 yellow inset, 300px 0 red inset, 400px 0 blue inset, 500px 0 orange inset; }
+  .container::before {
+    top: 0; }
+  .container::after {
+    bottom: 0; }
